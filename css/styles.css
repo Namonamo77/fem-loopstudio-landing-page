@@ -273,3 +273,69 @@ footer {
     fill: var(--Accent);
     transition: fill 300ms ease-in-out;
 }
+
+@media (min-width: 900px) {
+    /* Navigation */
+    header {
+        width: 80%;
+        padding: 3em 0;
+    }
+    .logo{
+        width: 15vw;
+    }
+    .hamburger {
+        display: none;
+    }
+    .nav-menu {
+        transform: translateX(0%);
+        background: transparent;
+        position: relative;
+        z-index: 99;
+        margin: 0;
+        height: 2vh;
+    }
+    .menu-links {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: -.3em 0 0 0;
+    }
+    .nav-link {
+
+        margin-bottom: 0;
+    }
+    .nav-link a {
+        margin-left: 1em;
+        text-transform: capitalize;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+
+    .hero-title {
+        width: 50%;
+        margin-left: 2em;
+    }
+
+    .portfolio {
+        position: relative;
+    }
+
+    .info-photo {
+        width: 60%;
+        margin-left: 4em;
+        height: 400px;
+    }
+    .info {
+        background: var(--White);
+        position: absolute;
+        width: 40%;
+        right: 4em;
+        top: 9.8em;
+        padding: 1.5em 0 0 3em ;
+    }
+    .info-text, .info-title {
+        text-align: left;
+        line-height: 1.3;
+    }
+}
