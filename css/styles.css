@@ -317,11 +317,18 @@ footer {
         margin-left: 2em;
     }
 
+    .hero {
+        background: url("../images/desktop/image-hero.jpg");
+        background-size: cover;
+    }
+
     .portfolio {
         position: relative;
     }
 
     .info-photo {
+        background: url("../images/desktop/image-interactive.jpg");
+        background-size: cover;
         width: 60%;
         margin-left: 4em;
         height: 400px;
@@ -338,4 +345,101 @@ footer {
         text-align: left;
         line-height: 1.3;
     }
+    .grid-section {
+        margin-top: 3em;
+        position: relative;
+    }
+    .grid-title {
+        margin-bottom: 2em;
+        margin-left: 0;
+        text-align: left;
+    }
+    .grid-btn {
+        position: absolute;
+        right: 0;
+        top: 1.6em;
+
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2;
+        gap: .25em 1em;
+    }
+    .grid-img {
+        position: relative;
+        height: 350px;
+        cursor: pointer;
+        transition: all 350ms ease-in-out;
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--White);
+        opacity: 0;
+        z-index: 50;
+        transition: opacity 350ms ease-in-out;
+
+    }
+    .grid-img-title {
+        z-index: 99;
+        transition: all 350ms ease-in-out;
+
+    }
+    .grid-img:hover .overlay {
+        opacity: .7;
+    }
+    .grid-img:hover .grid-img-title {
+        color: var(--Black);
+    }
+  
+
+    .img1{
+        background: 
+        linear-gradient(0deg,rgba(5, 5, 5, .4)20%, rgba(5, 5, 5, .0) 80%), 
+        url("../images/desktop/image-deep-earth.jpg");    
+    }
+    .img2{
+        background: 
+        linear-gradient(0deg,rgba(5, 5, 5, .4)20%, rgba(5, 5, 5, .0) 80%), 
+        url("../images/desktop/image-night-arcade.jpg");    
+    }
+    .img3{
+        background: 
+        linear-gradient(0deg,rgba(5, 5, 5, .4)20%, rgba(5, 5, 5, .0) 80%), 
+        url("../images/desktop/image-soccer-team.jpg");    
+    }
+    .img4{
+        background: 
+        linear-gradient(0deg,rgba(5, 5, 5, .4)20%, rgba(5, 5, 5, .0) 80%), 
+        url("../images/desktop/image-grid.jpg");    
+    }
+    .img5{
+        background: 
+        linear-gradient(0deg,rgba(5, 5, 5, .4)20%, rgba(5, 5, 5, .0) 80%), 
+        url("../images/desktop/image-from-above.jpg");    
+    }
+    .img6{
+        background: 
+        linear-gradient(0deg,rgba(5, 5, 5, .4)20%, rgba(5, 5, 5, .0) 80%), 
+        url("../images/desktop/image-pocket-borealis.jpg");    
+    }
+    .img7{
+        background: 
+        linear-gradient(0deg,rgba(5, 5, 5, .4) 20%, rgba(5, 5, 5, .0) 80%), 
+        url("../images/desktop/image-curiosity.jpg");    
+    }
+    .img8{
+        background: 
+        linear-gradient(0deg,rgba(5, 5, 5, .4)20%, rgba(5, 5, 5, .0) 80%), 
+        url("../images/desktop/image-fisheye.jpg");    
+    }
+    /* .grid-img-title {
+        text-shadow: 0px 0px 16px #000;
+    } */
 }
