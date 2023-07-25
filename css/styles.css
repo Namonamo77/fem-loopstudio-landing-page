@@ -337,9 +337,9 @@ footer {
         background: var(--White);
         position: absolute;
         width: 40%;
-        right: 4em;
+        right: 4.5em;
         top: 9.8em;
-        padding: 1.5em 0 0 3em ;
+        padding: 1.5em 0 3em 3em ;
     }
     .info-text, .info-title {
         text-align: left;
