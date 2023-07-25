@@ -439,7 +439,49 @@ footer {
         linear-gradient(0deg,rgba(5, 5, 5, .4)20%, rgba(5, 5, 5, .0) 80%), 
         url("../images/desktop/image-fisheye.jpg");    
     }
-    /* .grid-img-title {
-        text-shadow: 0px 0px 16px #000;
-    } */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer-logo {
+        margin-left: 0;
+    }
+    .left-footer, .right-footer {
+        margin: 0 3em;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .left-footer {
+        align-items: flex-start;
+    }
+    .right-footer{
+        align-items: flex-end;
+    }
+    .footer-logo{
+        width: 40%;
+    }
+    
+    .footer-nav-menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-nav-link {
+        margin-right: 1em;
+        font-size: .8rem;
+        margin-bottom: 0;
+    }
+    .social-icons {
+        width: 50%;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: .5em;
+    }
+    .icon {
+        margin-left: 1em;
+    }
+
 }
